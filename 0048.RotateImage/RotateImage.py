@@ -16,10 +16,13 @@ class Solution:
                 j = j + 1
             sidelength = sidelength - 2
             iround = iround + 1
+            
+    def rotate2(self, matrix: list[list[int]]) -> None:
+        matrix[:] = [list(x) for x in zip(*matrix[::-1])]
 
 if __name__ == "__main__":
     mac = Solution()
 
-    matrix = [[1,2],[3,4]]
-    mac.rotate(matrix)
+    matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+    mac.rotate2(matrix)
     print(matrix)
