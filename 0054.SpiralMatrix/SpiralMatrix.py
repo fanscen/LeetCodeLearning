@@ -44,7 +44,37 @@ class Solution:
                 break
         return sol
 
+    def spiralOrder2(self,matrix: list[list[int]]) -> list[int]:
+        sol = []
+        left = 0
+        right = len(matrix[0]) - 1
+        up = 0
+        down = len(matrix) - 1
+
+        directions = [[0,1],[1,0],[0,-1],[-1,0]]
+        i,j = 0,0
+        directionsIndex = 0
+        while True:
+            sol.append(matrix[i][j])
+            if i + directions[directionsIndex][0] < up or i + directions[directionsIndex][0] > down or \
+                j + directions[directionsIndex][1] < left or j + directions[directionsIndex][1] > right:
+                if directionsIndex == 0:
+                    up = up + 1
+                elif directionsIndex == 1:
+                    right = right - 1
+                elif directionsIndex == 2:
+                    down = down -1
+                else:
+                    left = left + 1                 
+                directionsIndex = (directionsIndex + 1)%4
+            if left > right or up > down:
+                break
+
+            i = i + directions[directionsIndex][0]
+            j = j + directions[directionsIndex][1]
+        return sol
+
 if __name__ == "__main__":
     mac = Solution()
 
-    print(mac.spiralOrder([[1,2,3,4],[5,6,7,8],[9,10,11,12]]))
+    print(mac.spiralOrder2([[1,2,3,4],[5,6,7,8],[9,10,11,12]]))
