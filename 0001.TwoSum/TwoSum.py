@@ -10,3 +10,4 @@ class Solution:
                         return [i,j]
                     j = j + 1
         return []
+
