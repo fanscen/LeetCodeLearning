@@ -9,7 +9,9 @@ class Solution:
                     if target == x + y :
                         return [i,j]
                     j = j + 1
-        return [] 
+        return []
+
+
  
 
 if __name__ == '__main__':
