@@ -19,5 +19,15 @@ class Solution {
         int target = 9;
         int[] result = solution.twoSum(nums, target);
         System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
+
+        int[] nums2 = {3, 2, 4};
+        int target2 = 6;
+        int[] result2 = solution.twoSum(nums2, target2);
+        System.out.println("Indices: [" + result2[0] + ", " + result2[1] + "]");
+
+        int[] nums3 = {3, 3};
+        int target3 = 6;
+        int[] result3 = solution.twoSum(nums3, target3);
+        System.out.println("Indices: [" + result3[0] + ", " + result3[1] + "]");
     }
 }
