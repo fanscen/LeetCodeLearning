@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SearchInsert",
+            "request": "launch",
+            "mainClass": "SearchInsert",
+            "projectName": "LeetCodeLearning_736ec147"
+        },
+        {
+            "type": "java",
             "name": "Solution",
             "request": "launch",
             "mainClass": "Solution",
