@@ -12,6 +12,20 @@
             "projectName": "LeetCodeLearning_ff67326"
         },
         {
+            "type": "java",
+            "name": "SearchInsert",
+            "request": "launch",
+            "mainClass": "SearchInsert",
+            "projectName": "LeetCodeLearning_ff67326"
+        },
+        {
+            "type": "java",
+            "name": "Java: 当前文件",
+            "request": "launch",
+            "mainClass": "${file}",
+            "console": "internalConsole"
+        },
+        {
             "name": "Python: 当前文件",
             "type": "python",
             "request": "launch",
