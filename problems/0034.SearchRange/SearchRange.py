@@ -32,8 +32,18 @@ class Solution:
 
         
 if __name__ == "__main__":
-    mac = Solution()
-    #print(mac.search([4,5,6,7,0,1,2],0))
-    #print(mac.searchRange([5,7,7,8,8,10],8))
-    #print(mac.searchRange([5,7,7,8,8,10],6))
-    print(mac.searchRange([1],1))
+    solution = Solution()
+    # 测试用例
+    test_cases = [
+        ([5, 7, 7, 8, 8, 10], 8),  # 目标值在数组中出现多次
+        ([5, 7, 7, 8, 8, 10], 6),    # 目标值不在数组中
+        ([], 0),                      # 空数组
+        ([1], 1),                     # 只有一个元素且等于目标值
+        ([2, 2], 2)                   # 所有元素都等于目标值
+    ]
+    
+    for nums, target in test_cases:
+        result = solution.searchRange(nums, target)
+        print(f"输入: nums = {nums}, target = {target}")
+        print(f"输出: {result}")
+        print("---")
