@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MySqrt",
+            "request": "launch",
+            "mainClass": "MySqrt",
+            "projectName": "LeetCodeLearning_11807739"
+        },
+        {
+            "type": "java",
+            "name": "SearchInsert",
+            "request": "launch",
+            "mainClass": "SearchInsert",
+            "projectName": "LeetCodeLearning_11807739"
+        },
+        {
+            "type": "java",
             "name": "Solution",
             "request": "launch",
             "mainClass": "Solution",
