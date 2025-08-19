@@ -3,5 +3,14 @@
     "IDX.aI.enableInlineCompletion": true,
     "IDX.aI.enableCodebaseIndexing": true,
     "java.debug.settings.onBuildFailureProceed": true,
-    "python.analysis.autoImportCompletions": true
+    "python.analysis.autoImportCompletions": true,
+    "java.project.sourcePaths": [
+        "problems/0704.Search",
+        "problems/0242.IsAnagram",
+        "problems/0069.MySqrt",
+        "problems/0035.SearchInsert",
+        "problems/0034.SearchRange",
+        "problems/0001.TwoSum",
+        "problems/0202.IsHappy"
+    ]
 }

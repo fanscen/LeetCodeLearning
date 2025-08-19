@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IsHappy",
+            "request": "launch",
+            "mainClass": "IsHappy",
+            "projectName": "LeetCodeLearning_11807739"
+        },
+        {
+            "type": "java",
             "name": "IsAnagram",
             "request": "launch",
             "mainClass": "IsAnagram",
